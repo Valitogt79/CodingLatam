@@ -1,0 +1,15 @@
+:root {
+  --primary-color: #5EB9F0;
+  --paragraph-color: #360697;
+  --heading-color: #343F52;
+  --skyblue: #5eb9f0;
+  --white: #FFFFFF;
+}
+
+body {
+  font-family: "Urbanist", sans-serif;
+}
+
+.hero {
+  background-color: chartreuse;
+}

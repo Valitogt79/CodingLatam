@@ -60,6 +60,7 @@ ul {
   list-style: none;
   display: flex;
   gap: 30px;
+
   & li a {
     text-decoration: none;
     color: var(--heading-color);
@@ -125,6 +126,10 @@ ul {
     text-decoration: underline;
   }
 
+  & img {
+    min-height: 230px;
+  }
+
   & p {
     max-width: 316px;
     margin: 0 auto 20px;
@@ -152,6 +157,7 @@ ul {
 .testimonials-item {
   background-color: var(--white);
   padding: 20px;
+
   & p {
     font-size: 18px;
   }

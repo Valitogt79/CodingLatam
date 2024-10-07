@@ -2,9 +2,10 @@
   --primary-color: #5eb9f0;
   --paragraph-color: #360697;
   --heading-color: #343f52;
-  --skyblue: #5eb9f0;
+  --skyblue: #e5f4fd;
   --white: #ffffff;
   --light-gray: #f0f8fe;
+  --gray: #fefefe;
 }
 
 body {
@@ -20,6 +21,7 @@ body {
 h1 {
   color: var(--heading-color);
   font-size: 54px;
+  font-weight: 600;
   line-height: 62px;
 
   & span {
@@ -30,24 +32,26 @@ h1 {
 h2 {
   color: (--heading-color);
   font-size: 42px;
+  font-weight: 600;
   line-height: 50px;
 }
 
 h3 {
   color: (--heading-color);
   font-size: 23px;
+  font-weight: 600;
   line-height: 32px;
 }
 
-main {
-  max-width: 1280px;
-  margin: 0 auto;
-}
+main {}
 
 nav {
+  padding: 20px 0;
+}
+
+.nav-container {
   display: flex;
   justify-content: space-between;
-  padding: 20px 0;
 }
 
 p {
@@ -79,9 +83,12 @@ ul {
   width: fit-content;
 }
 
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 .hero {
-  display: flex;
-  align-items: center;
   gap: 30px;
   padding: 60px;
 
@@ -95,6 +102,12 @@ ul {
     line-height: 34px;
     margin-bottom: 30px;
   }
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 /* services styles */
@@ -133,6 +146,62 @@ ul {
   & p {
     max-width: 316px;
     margin: 0 auto 20px;
+  }
+}
+
+/* Strategy Styles */
+.strategy {
+  background-color: var(--gray);
+  padding: 50px 0 100px;
+
+  & h2 {
+    margin-bottom: 30px;
+  }
+
+  & p {
+    margin-bottom: 20px;
+  }
+}
+
+.strategy-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  align-items: center;
+}
+
+.strategy-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.strategy-card {
+  align-items: center;
+  background-color: var(--white);
+  box-shadow: 1px 0.1rem 0.5rem 0px rgb(60 60 60 / 39%);
+  display: flex;
+  gap: 20px;
+  max-width: 520px;
+  padding: 20px;
+  position: relative;
+
+  &:nth-child(2) {
+    left: 50px;
+  }
+
+  &:nth-child(3) {
+    left: 20px;
+  }
+
+  & .order {
+    background-color: var(--skyblue);
+    border-radius: 100%;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 22px;
+    padding: 10px 12px;
+    width: fit-content;
   }
 }
 

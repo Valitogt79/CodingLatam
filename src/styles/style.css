@@ -12,6 +12,21 @@ body {
   font-family: "Urbanist", sans-serif;
 }
 
+details {
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 5px;
+}
+
+footer {
+  padding: 50px 0;
+  background-color: var(--heading-color);
+
+  & h2 {
+    color: var(--white);
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -43,7 +58,8 @@ h3 {
   line-height: 32px;
 }
 
-main {}
+main {
+}
 
 nav {
   padding: 20px 0;
@@ -58,6 +74,17 @@ p {
   color: (--paragraph-color);
   font-size: 17px;
   line-height: 29px;
+}
+
+summary {
+  background-color: var(--white);
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+
+  &::marker {
+    color: var(--primary-color);
+  }
 }
 
 ul {
@@ -75,9 +102,10 @@ ul {
 .btn-primary {
   background-color: var(--primary-color);
   border-radius: 25px;
-  box-shadow: 1px 0.1rem 0.5rem 0px rgb(60 60 60 / 39%);
+  box-shadow: 1px 0.1rem 0.5rem 0px rgb(60 60 60 / 12%);
   color: var(--white);
   display: block;
+  height: fit-content;
   padding: 16px;
   text-decoration: none;
   width: fit-content;
@@ -88,9 +116,45 @@ ul {
   margin: 0 auto;
 }
 
+.faqs {
+  background-color: var(--grey);
+  padding: 50px 0 100px;
+
+  & h2,
+  & p {
+    margin-bottom: 20px;
+  }
+}
+
+.faqs-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+}
+
+.faqs-item {
+  box-shadow: 1px 0.1rem 0.5rem 0px rgb(60 60 60 / 12%);
+  cursor: pointer;
+}
+
+.faqs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+
+  & .btn-primary {
+    justify-self: center;
+  }
+}
+
 .hero {
-  gap: 30px;
-  padding: 60px;
+  padding: 60px 0;
 
   & h1 {
     min-width: 405px;
@@ -108,6 +172,21 @@ ul {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+}
+
+/* Projects Styles */
+.projects {
+  padding: 50px 0 100px;
+  & h2 {
+    margin: 0 auto 50px;
+    max-width: 780px;
+    text-align: center;
+  }
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 /* services styles */
@@ -179,7 +258,7 @@ ul {
 .strategy-card {
   align-items: center;
   background-color: var(--white);
-  box-shadow: 1px 0.1rem 0.5rem 0px rgb(60 60 60 / 39%);
+  box-shadow: 1px 0.1rem 0.5rem 0px rgb(60 60 60 / 12%);
   display: flex;
   gap: 20px;
   max-width: 520px;
@@ -201,6 +280,65 @@ ul {
     font-weight: 600;
     font-size: 22px;
     padding: 10px 12px;
+    width: fit-content;
+  }
+}
+
+/* Team Styles */
+.team {
+  background-color: var(--gray);
+  padding: 50px 0 100px;
+}
+
+.team-container {
+  align-items: center;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 2fr auto;
+  justify-items: center;
+}
+
+.team-item {
+  background-color: var(--white);
+  box-shadow: 1px 0.1rem 0.5rem 0px rgb(60 60 60 / 12%);
+  padding: 20px;
+
+  & h3 {
+    font-size: 20px;
+    & + p {
+      color: #aab0bc;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.team-list {
+  display: grid;
+  gap: 20px;
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.team-stadistics {
+  display: flex;
+  gap: 100px;
+}
+
+.team-stadiatics-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+
+  & h3 {
+    font-size: 41px;
+  }
+
+  & .image {
+    background-color: var(--skyblue);
+    border-radius: 100%;
+    padding: 16px;
     width: fit-content;
   }
 }

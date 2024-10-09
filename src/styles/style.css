@@ -72,19 +72,29 @@ nav {
 
   & ul {
     display: none;
-    position: absolute;
-    background-color: var(--primary-color);
-    top: 0;
-    left: 0;
-    height: 100vh;
-    /* display: flex; */
-    flex-direction: column;
-    padding: 20px 0;
-    text-align: center;
-    width: 100%;
+
+    &.active {
+      display: flex;
+      position: absolute;
+      background-color: var(--primary-color);
+      top: 0;
+      left: 0;
+      height: 100vh;
+      flex-direction: column;
+      padding: 50px 0 20px;
+      text-align: center;
+      width: 100%;
+    }
 
     & a {
       color: var(--white);
+    }
+
+    & span {
+      font-weight: 600;
+      position: absolute;
+      right: 10px;
+      top: 20px;
     }
   }
 }
@@ -322,7 +332,7 @@ ul {
   & h3 {
     font-size: 20px;
 
-    & + p {
+    &+p {
       color: #aab0bc;
       text-transform: uppercase;
     }
@@ -420,11 +430,19 @@ ul {
     }
   }
 
-  /* .nav-container { */
-  /*   & ul { */
-  /*     display: flex; */
-  /*   } */
-  /* } */
+  .btn-nav {
+    display: none;
+  }
+
+  .nav-container {
+    & ul {
+      display: flex;
+
+      & a {
+        color: var(--heading-color)
+      }
+    }
+  }
 
   .projects-container {
     grid-auto-columns: repeat(2, 1fr);

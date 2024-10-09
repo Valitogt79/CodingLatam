@@ -1,3 +1,19 @@
+// creanndo la funcion para el menu 
+function toggleMenu() {
+  const navButtons = document.querySelectorAll(".btn-nav")
+  const navMenu = document.querySelector("nav ul")
+
+  navButtons.forEach(element => {
+
+    element.addEventListener("click", function () {
+      navMenu.classList.toggle("active")
+    })
+  })
+}
+
+toggleMenu()
+
+// Consumiendo archivo Json para obtener la data
 async function getServices() {
   const response = await fetch("http://localhost:3000/services")
   const services = await response.json()
@@ -15,6 +31,8 @@ async function getServices() {
 
 getServices()
 
+
+// Generando la estructura html para mostrar lista de servicios, con la data del Json
 function createServiceItem(imageURL, title, description, linkText, linkHref) {
   const servicesList = document.querySelector(".services-list")
   const serviceItemContainer = document.createElement("div")
@@ -40,4 +58,3 @@ function createServiceItem(imageURL, title, description, linkText, linkHref) {
   servicesList.append(serviceItemContainer)
 }
 
-createServiceItem()

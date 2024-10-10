@@ -332,7 +332,7 @@ ul {
   & h3 {
     font-size: 20px;
 
-    &+p {
+    & + p {
       color: #aab0bc;
       text-transform: uppercase;
     }
@@ -439,13 +439,13 @@ ul {
       display: flex;
 
       & a {
-        color: var(--heading-color)
+        color: var(--heading-color);
       }
     }
   }
 
   .projects-container {
-    grid-auto-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .strategy-container {

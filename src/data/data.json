@@ -3,21 +3,21 @@
     {
       "id": 0,
       "title": "Web Design",
-      "image": "./assets/images/services/service1.png",
+      "image": "https://cdn3.iconfinder.com/data/icons/future-pack/64/049-pattern-recognition-structure-abstract-grid-256.png",
       "description": "Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget. Fusce dapibus tellus.",
       "link": "/"
     },
     {
       "id": 1,
       "title": "Graphic Design",
-      "image": "./assets/images/services/service2.png",
+      "image": "https://cdn3.iconfinder.com/data/icons/future-pack/64/049-pattern-recognition-structure-abstract-grid-256.png",
       "description": "Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet. Sed posuere consectetur",
       "link": "/"
     },
     {
       "id": 2,
       "title": "3D Animation",
-      "image": "./assets/images/services/service3.png",
+      "image": "https://cdn3.iconfinder.com/data/icons/future-pack/64/049-pattern-recognition-structure-abstract-grid-256.png",
       "description": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna scelerisque.",
       "link": "/"
     }
@@ -26,7 +26,7 @@
     {
       "id": 0,
       "author": "Coriss Ambady",
-      "image": "./assets/images/team/team1.jpg",
+      "image": "../assets/images/team/team1.jpg",
       "area": "Fiancial Analyst",
       "testimonial": "“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus."
     },
@@ -105,28 +105,28 @@
   "teams": [
     {
       "id": 0,
-      "image": "./assets/images/team/team1.jpg",
+      "image": "https://cdn2.iconfinder.com/data/icons/people-flat-design/64/Man-Person-People-Avatar-User-Happy-256.png",
       "name": "Coriss Ambady",
       "area": "Financial Analyst",
       "slogan": "Fermentum massa justo sit amet risus morbi leo."
     },
     {
       "id": 1,
-      "image": "./assets/images/team/team2.jpg",
+      "image": "https://cdn2.iconfinder.com/data/icons/people-flat-design/64/Man-Person-People-Avatar-User-Happy-256.png",
       "name": "Coriss Ambady",
       "area": "Financial Analyst",
       "slogan": "Fermentum massa justo sit amet risus morbi leo."
     },
     {
       "id": 2,
-      "image": "./assets/images/team/team3.jpg",
+      "image": "https://cdn2.iconfinder.com/data/icons/people-flat-design/64/Man-Person-People-Avatar-User-Happy-256.png",
       "name": "Coriss Ambady",
       "area": "Financial Analyst",
       "slogan": "Fermentum massa justo sit amet risus morbi leo."
     },
     {
       "id": 3,
-      "image": "./assets/images/team/team4.jpg",
+      "image": "https://cdn2.iconfinder.com/data/icons/people-flat-design/64/Man-Person-People-Avatar-User-Happy-256.png",
       "name": "Coriss Ambady",
       "area": "Financial Analyst",
       "slogan": "Fermentum massa justo sit amet risus morbi leo."
